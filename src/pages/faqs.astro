@@ -1,0 +1,34 @@
+---
+import Accordion from '../components/Accordion.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "FAQs";
+
+const faqs = [
+  {
+    question: "¿Cuál es el horario de atención?",
+    answer: "Nuestro horario de atención es de lunes a viernes de 9:00 AM a 6:00 PM."
+  },
+  {
+    question: "¿Cómo puedo realizar un pedido?",
+    answer: "Puedes realizar un pedido a través de nuestra página web o llamando a nuestro número de atención al cliente."
+  },
+  {
+    question: "¿Cuál es el tiempo de entrega?",
+    answer: "El tiempo de entrega estándar es de 3 a 5 días hábiles, dependiendo de tu ubicación."
+  },
+  {
+    question: "¿Ofrecen devoluciones?",
+    answer: "Sí, ofrecemos devoluciones dentro de los 30 días posteriores a la compra, siempre que el producto esté en su estado original."
+  },
+  {
+    question: "¿Tienen descuentos para compras al por mayor?",
+    answer: "Sí, ofrecemos descuentos especiales para compras al por mayor. Por favor, contáctanos para más detalles."
+  }
+];
+
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Frecuently Asked Questions</h2>
+
+  <Accordion faqs={faqs} />
+</BaseLayout>
