@@ -91,3 +91,7 @@ html.dark {
 .dark .nav-links a {
   color: #fff;
 }
+
+.link{
+    color: rgb(136, 35, 252);
+}
